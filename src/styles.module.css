@@ -1,0 +1,37 @@
+.sceleton {
+  background-color: #bdc3c7;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.sceleton:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background: white;
+  width: 40px;
+  height: 100%;
+  transform: skew(-20deg);
+  -webkit-animation: slide-right 1s ease-in-out infinite both;
+  animation: slide-right 1s ease-in-out infinite both;
+}
+@-webkit-keyframes slide-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes slide-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
