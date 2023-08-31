@@ -30,9 +30,9 @@ const Head = ({ loading, state }) => {
 const DownloadList = ({state}) => {
   if (state?.download)
     return (
-      <div className="text-right">
+      <div className="mt-20 text-right">
         <a href={state?.download} target="_blank" download="Список товаров в пути на склад" className="btn transBtn">
-          <img src="<?=SITE_TEMPLATE_PATH?>/img/xlsx.svg" alt="" className="mr-5" />
+          <img src="/local/templates/intelka/img/xlsx.svg" alt="" className="mr-5" />
           Скачать список
         </a>
       </div>
